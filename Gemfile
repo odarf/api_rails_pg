@@ -6,20 +6,15 @@ gem 'json'
 gem 'sinatra'
 gem 'sequel'
 gem 'sequel-seed'
-gem 'sinatra-contrib'
+gem 'sinatra-contrib', require: false
 gem 'rack'
 gem 'rake'
 gem 'pg'
 gem 'active_model_serializers'
 gem 'activerecord-reset-pk-sequence'
 
-
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
-
-# Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
