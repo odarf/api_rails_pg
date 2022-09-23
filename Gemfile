@@ -12,6 +12,7 @@ gem 'rake'
 gem 'pg'
 gem 'active_model_serializers'
 gem 'activerecord-reset-pk-sequence'
+gem 'rdoc'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
