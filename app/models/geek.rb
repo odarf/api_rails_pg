@@ -5,4 +5,8 @@ class Geek < ApplicationRecord
   validates :name, uniqueness: true
   validates :stack, presence: true
   validates :resume, presence: true
+
+  def mark_delete
+    self.update(deleted: true)
+  end
 end
