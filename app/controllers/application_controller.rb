@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordNotFound do
-    render json: { error: 'No such record in Database, check params', status: :not_found}
+    render json: { error: 'No such record in Database, check params',
+                   status: :not_found}
   end
 
   def catch_404
@@ -14,5 +15,4 @@ class ApplicationController < ActionController::API
                    status: :no_route
     }
   end
-
 end

@@ -1,5 +1,5 @@
 class Api::V1::JobsController < ApplicationController
-  before_action :set_job, only: [:show, :update, :destroy]
+  before_action :set_job, only: [:show, :update, :mark_deleted]
 
   def index
     if params[:company_id]
@@ -31,9 +31,27 @@ class Api::V1::JobsController < ApplicationController
     end
   end
 
+  def mark_deleted
+    if @job.deleted
+      puts "deleted: "
+      render json: { deleted_job: [],
+                     deleted_already: :not_modified,
+      }
+    else
+      @job.mark_delete
+      render json: { deleted_company: @job,
+                     code: 200,
+                     status: :success,
+      }, except: [:created_at, :updated_at]
+    end
+  end
+
 
   private
   def set_job
+    if params[:job_id]
+      params[:id] = params[:job_id]
+    end
     @job = Job.find(params[:id])
   end
 
