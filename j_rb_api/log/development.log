@@ -1,0 +1,1289 @@
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:03:43 +0300
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: sinatra_admin.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-09-15 20:03:48 +0300
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: sinatra_admin.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:04:31 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.2ms | Allocations: 725)
+Completed 200 OK in 62ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 6764)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:05:13 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 388)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 1377)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:05:15 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 16)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 288)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:09:06 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 16)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 261)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:09:09 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:09:28 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.4ms | Allocations: 725)
+Completed 200 OK in 24ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 6364)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 20:10:01 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 388)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1377)
+
+
+  [1m[35m (214.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (148.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJobs (20220915171208)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (111.1ms)[0m  [1m[35mCREATE TABLE "jobs" ("id" bigserial primary key, "name" character varying NOT NULL, "place" character varying NOT NULL, "company_id" integer NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220915171208"]]
+  [1m[36mTRANSACTION (14.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-15 17:54:12.230725"], ["updated_at", "2022-09-15 17:54:12.230725"]]
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGeeks (20220915175606)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (158.3ms)[0m  [1m[35mCREATE TABLE "geeks" ("id" bigserial primary key, "name" character varying NOT NULL, "stack" character varying NOT NULL, "resume" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220915175606"]]
+  [1m[36mTRANSACTION (23.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCompanies (20220915175716)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (161.9ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying NOT NULL, "location" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220915175716"]]
+  [1m[36mTRANSACTION (15.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateApplies (20220915175819)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (68.6ms)[0m  [1m[35mCREATE TABLE "applies" ("id" bigserial primary key, "job_id" integer NOT NULL, "geek_id" integer NOT NULL, "read" boolean DEFAULT FALSE, "invited" boolean DEFAULT FALSE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220915175819"]]
+  [1m[36mTRANSACTION (26.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5878493172211724820)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (1.5ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.8ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-15 18:16:43.730537"], ["updated_at", "2022-09-15 18:16:43.730537"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-15 18:16:43.757507"], ["updated_at", "2022-09-15 18:16:43.757507"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-15 18:16:43.779168"], ["updated_at", "2022-09-15 18:16:43.779168"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.8ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-15 18:16:43.802141"], ["updated_at", "2022-09-15 18:16:43.802141"]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (1.0ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-15 18:16:43.986123"], ["updated_at", "2022-09-15 18:16:43.986123"]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-15 18:16:44.021026"], ["updated_at", "2022-09-15 18:16:44.021026"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-15 18:16:44.052627"], ["updated_at", "2022-09-15 18:16:44.052627"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-15 18:16:44.077823"], ["updated_at", "2022-09-15 18:16:44.077823"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.1ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-15 18:16:44.097873"], ["updated_at", "2022-09-15 18:16:44.097873"]]
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:16:44.175359"], ["updated_at", "2022-09-15 18:16:44.175359"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:16:44.219000"], ["updated_at", "2022-09-15 18:16:44.219000"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (0.9ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.3ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.370596"], ["updated_at", "2022-09-15 18:16:44.370596"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.395914"], ["updated_at", "2022-09-15 18:16:44.395914"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-15 18:16:44.419088"], ["updated_at", "2022-09-15 18:16:44.419088"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.440571"], ["updated_at", "2022-09-15 18:16:44.440571"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:16:44.464196"], ["updated_at", "2022-09-15 18:16:44.464196"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.484961"], ["updated_at", "2022-09-15 18:16:44.484961"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.513537"], ["updated_at", "2022-09-15 18:16:44.513537"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:16:44.540377"], ["updated_at", "2022-09-15 18:16:44.540377"]]
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.0ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-15 18:16:44.568007"], ["updated_at", "2022-09-15 18:16:44.568007"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (0.8ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.5ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (1.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (23.6ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-15 18:16:53.965060"], ["updated_at", "2022-09-15 18:16:53.965060"]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-15 18:16:53.985520"], ["updated_at", "2022-09-15 18:16:53.985520"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-15 18:16:54.007307"], ["updated_at", "2022-09-15 18:16:54.007307"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-15 18:16:54.031170"], ["updated_at", "2022-09-15 18:16:54.031170"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (5.9ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.1ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-15 18:16:54.215191"], ["updated_at", "2022-09-15 18:16:54.215191"]]
+  [1m[36mTRANSACTION (13.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (3.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-15 18:16:54.255840"], ["updated_at", "2022-09-15 18:16:54.255840"]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-15 18:16:54.281931"], ["updated_at", "2022-09-15 18:16:54.281931"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-15 18:16:54.305171"], ["updated_at", "2022-09-15 18:16:54.305171"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-15 18:16:54.327330"], ["updated_at", "2022-09-15 18:16:54.327330"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:16:54.349718"], ["updated_at", "2022-09-15 18:16:54.349718"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.1ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:16:54.373433"], ["updated_at", "2022-09-15 18:16:54.373433"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (7.3ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.0ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.463012"], ["updated_at", "2022-09-15 18:16:54.463012"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.0ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.496390"], ["updated_at", "2022-09-15 18:16:54.496390"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-15 18:16:54.532749"], ["updated_at", "2022-09-15 18:16:54.532749"]]
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.6ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.564692"], ["updated_at", "2022-09-15 18:16:54.564692"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:16:54.596150"], ["updated_at", "2022-09-15 18:16:54.596150"]]
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.626122"], ["updated_at", "2022-09-15 18:16:54.626122"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.648179"], ["updated_at", "2022-09-15 18:16:54.648179"]]
+  [1m[36mTRANSACTION (50.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:16:54.724249"], ["updated_at", "2022-09-15 18:16:54.724249"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-15 18:16:54.753258"], ["updated_at", "2022-09-15 18:16:54.753258"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (1.0ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.5ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (29.7ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-15 18:17:19.537327"], ["updated_at", "2022-09-15 18:17:19.537327"]]
+  [1m[36mTRANSACTION (13.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-15 18:17:19.569211"], ["updated_at", "2022-09-15 18:17:19.569211"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-15 18:17:19.591348"], ["updated_at", "2022-09-15 18:17:19.591348"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-15 18:17:19.614062"], ["updated_at", "2022-09-15 18:17:19.614062"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (10.2ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-15 18:17:19.736995"], ["updated_at", "2022-09-15 18:17:19.736995"]]
+  [1m[36mTRANSACTION (11.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-15 18:17:19.768708"], ["updated_at", "2022-09-15 18:17:19.768708"]]
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-15 18:17:19.803090"], ["updated_at", "2022-09-15 18:17:19.803090"]]
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-15 18:17:19.835173"], ["updated_at", "2022-09-15 18:17:19.835173"]]
+  [1m[36mTRANSACTION (13.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-15 18:17:19.868651"], ["updated_at", "2022-09-15 18:17:19.868651"]]
+  [1m[36mTRANSACTION (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:17:19.899518"], ["updated_at", "2022-09-15 18:17:19.899518"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:17:19.921517"], ["updated_at", "2022-09-15 18:17:19.921517"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (9.6ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.005766"], ["updated_at", "2022-09-15 18:17:20.005766"]]
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.032180"], ["updated_at", "2022-09-15 18:17:20.032180"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-15 18:17:20.057779"], ["updated_at", "2022-09-15 18:17:20.057779"]]
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.086793"], ["updated_at", "2022-09-15 18:17:20.086793"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:17:20.115099"], ["updated_at", "2022-09-15 18:17:20.115099"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.146616"], ["updated_at", "2022-09-15 18:17:20.146616"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.0ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.180274"], ["updated_at", "2022-09-15 18:17:20.180274"]]
+  [1m[36mTRANSACTION (100.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:17:20.297655"], ["updated_at", "2022-09-15 18:17:20.297655"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-15 18:17:20.320003"], ["updated_at", "2022-09-15 18:17:20.320003"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (1.3ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.4ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (57.0ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-15 18:21:39.133872"], ["updated_at", "2022-09-15 18:21:39.133872"]]
+  [1m[36mTRANSACTION (58.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-15 18:21:39.206490"], ["updated_at", "2022-09-15 18:21:39.206490"]]
+  [1m[36mTRANSACTION (56.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.8ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-15 18:21:39.273560"], ["updated_at", "2022-09-15 18:21:39.273560"]]
+  [1m[36mTRANSACTION (66.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.0ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-15 18:21:39.353082"], ["updated_at", "2022-09-15 18:21:39.353082"]]
+  [1m[36mTRANSACTION (47.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (41.4ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-15 18:21:39.640718"], ["updated_at", "2022-09-15 18:21:39.640718"]]
+  [1m[36mTRANSACTION (86.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-15 18:21:39.748393"], ["updated_at", "2022-09-15 18:21:39.748393"]]
+  [1m[36mTRANSACTION (62.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (1.2ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-15 18:21:39.835922"], ["updated_at", "2022-09-15 18:21:39.835922"]]
+  [1m[36mTRANSACTION (38.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.1ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-15 18:21:39.903284"], ["updated_at", "2022-09-15 18:21:39.903284"]]
+  [1m[36mTRANSACTION (23.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-15 18:21:39.954654"], ["updated_at", "2022-09-15 18:21:39.954654"]]
+  [1m[36mTRANSACTION (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:21:40.013365"], ["updated_at", "2022-09-15 18:21:40.013365"]]
+  [1m[36mTRANSACTION (36.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:21:40.079153"], ["updated_at", "2022-09-15 18:21:40.079153"]]
+  [1m[36mTRANSACTION (36.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (45.1ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.292938"], ["updated_at", "2022-09-15 18:21:40.292938"]]
+  [1m[36mTRANSACTION (47.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.364670"], ["updated_at", "2022-09-15 18:21:40.364670"]]
+  [1m[36mTRANSACTION (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.0ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-15 18:21:40.420311"], ["updated_at", "2022-09-15 18:21:40.420311"]]
+  [1m[36mTRANSACTION (29.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.473116"], ["updated_at", "2022-09-15 18:21:40.473116"]]
+  [1m[36mTRANSACTION (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:21:40.533107"], ["updated_at", "2022-09-15 18:21:40.533107"]]
+  [1m[36mTRANSACTION (48.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.604610"], ["updated_at", "2022-09-15 18:21:40.604610"]]
+  [1m[36mTRANSACTION (36.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.660891"], ["updated_at", "2022-09-15 18:21:40.660891"]]
+  [1m[36mTRANSACTION (34.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:21:40.724238"], ["updated_at", "2022-09-15 18:21:40.724238"]]
+  [1m[36mTRANSACTION (46.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-15 18:21:40.800024"], ["updated_at", "2022-09-15 18:21:40.800024"]]
+  [1m[36mTRANSACTION (48.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (0.9ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.4ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (1.6ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 1], ["read", true], ["invited", true], ["created_at", "2022-09-15 18:21:41.012950"], ["updated_at", "2022-09-15 18:21:41.012950"]]
+  [1m[36mTRANSACTION (57.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.8ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (1.0ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 2], ["read", false], ["invited", false], ["created_at", "2022-09-15 18:21:41.107857"], ["updated_at", "2022-09-15 18:21:41.107857"]]
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.6ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mApply Create (0.9ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 5], ["geek_id", 5], ["read", true], ["invited", false], ["created_at", "2022-09-15 18:21:41.154033"], ["updated_at", "2022-09-15 18:21:41.154033"]]
+  [1m[36mTRANSACTION (30.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (1.0ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mApply Create (1.1ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 6], ["geek_id", 8], ["read", false], ["invited", false], ["created_at", "2022-09-15 18:21:41.219818"], ["updated_at", "2022-09-15 18:21:41.219818"]]
+  [1m[36mTRANSACTION (28.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (35.2ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-15 18:36:41.941580"], ["updated_at", "2022-09-15 18:36:41.941580"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-15 18:36:41.967410"], ["updated_at", "2022-09-15 18:36:41.967410"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.8ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-15 18:36:41.990245"], ["updated_at", "2022-09-15 18:36:41.990245"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-15 18:36:42.011822"], ["updated_at", "2022-09-15 18:36:42.011822"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (11.3ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-15 18:36:42.139342"], ["updated_at", "2022-09-15 18:36:42.139342"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-15 18:36:42.169671"], ["updated_at", "2022-09-15 18:36:42.169671"]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-15 18:36:42.198852"], ["updated_at", "2022-09-15 18:36:42.198852"]]
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-15 18:36:42.234453"], ["updated_at", "2022-09-15 18:36:42.234453"]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-15 18:36:42.264516"], ["updated_at", "2022-09-15 18:36:42.264516"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.9ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:36:42.287838"], ["updated_at", "2022-09-15 18:36:42.287838"]]
+  [1m[36mTRANSACTION (13.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (0.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-15 18:36:42.321054"], ["updated_at", "2022-09-15 18:36:42.321054"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (10.0ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.430814"], ["updated_at", "2022-09-15 18:36:42.430814"]]
+  [1m[36mTRANSACTION (11.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.466134"], ["updated_at", "2022-09-15 18:36:42.466134"]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-15 18:36:42.495411"], ["updated_at", "2022-09-15 18:36:42.495411"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.517642"], ["updated_at", "2022-09-15 18:36:42.517642"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.8ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:36:42.540401"], ["updated_at", "2022-09-15 18:36:42.540401"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.7ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.564411"], ["updated_at", "2022-09-15 18:36:42.564411"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.590601"], ["updated_at", "2022-09-15 18:36:42.590601"]]
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-15 18:36:42.620701"], ["updated_at", "2022-09-15 18:36:42.620701"]]
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (0.9ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-15 18:36:42.653523"], ["updated_at", "2022-09-15 18:36:42.653523"]]
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (9.7ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.6ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (1.4ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 1], ["read", true], ["invited", true], ["created_at", "2022-09-15 18:36:42.812711"], ["updated_at", "2022-09-15 18:36:42.812711"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.7ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (0.8ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 2], ["read", false], ["invited", false], ["created_at", "2022-09-15 18:36:42.850267"], ["updated_at", "2022-09-15 18:36:42.850267"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.6ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mApply Create (0.7ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 5], ["geek_id", 5], ["read", true], ["invited", false], ["created_at", "2022-09-15 18:36:42.878255"], ["updated_at", "2022-09-15 18:36:42.878255"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.6ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mApply Create (0.9ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 6], ["geek_id", 8], ["read", false], ["invited", false], ["created_at", "2022-09-15 18:36:42.915332"], ["updated_at", "2022-09-15 18:36:42.915332"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-09-15 21:37:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 725)
+Completed 200 OK in 20ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6349)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2022-09-15 21:37:26 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"jobs"}
+Routing error occurred: jobs
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.32ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 1129)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2022-09-15 21:54:11 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"jobs"}
+Routing error occurred: jobs
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 3ms (Views: 1.9ms | Allocations: 494)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 21:54:17 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 388)
+Completed 200 OK in 10ms (Views: 7.6ms | Allocations: 1361)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (79.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCompany Delete All (48.7ms)[0m  [1m[31mDELETE FROM "companies"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MoGo"], ["location", "New York"], ["created_at", "2022-09-16 06:59:14.974570"], ["updated_at", "2022-09-16 06:59:14.974570"]]
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wirkkle"], ["location", "London"], ["created_at", "2022-09-16 06:59:15.018317"], ["updated_at", "2022-09-16 06:59:15.018317"]]
+  [1m[36mTRANSACTION (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Artesis"], ["location", "Saint-Petersburg"], ["created_at", "2022-09-16 06:59:15.051218"], ["updated_at", "2022-09-16 06:59:15.051218"]]
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BuildEmpire"], ["location", "London"], ["created_at", "2022-09-16 06:59:15.084697"], ["updated_at", "2022-09-16 06:59:15.084697"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mJob Delete All (52.6ms)[0m  [1m[31mDELETE FROM "jobs"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.5ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sinatra React"], ["place", "Remote"], ["company_id", 1], ["created_at", "2022-09-16 06:59:15.458781"], ["updated_at", "2022-09-16 06:59:15.458781"]]
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Create (1.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby React"], ["place", "Contract"], ["company_id", 2], ["created_at", "2022-09-16 06:59:15.512424"], ["updated_at", "2022-09-16 06:59:15.512424"]]
+  [1m[36mTRANSACTION (11.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mJob Create (1.2ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "React"], ["place", "Remote"], ["company_id", 3], ["created_at", "2022-09-16 06:59:15.556751"], ["updated_at", "2022-09-16 06:59:15.556751"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Create (1.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node React"], ["place", "Permanent"], ["company_id", 1], ["created_at", "2022-09-16 06:59:15.600990"], ["updated_at", "2022-09-16 06:59:15.600990"]]
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.3ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ruby on Rails"], ["place", "Remote"], ["company_id", 4], ["created_at", "2022-09-16 06:59:15.645954"], ["updated_at", "2022-09-16 06:59:15.645954"]]
+  [1m[36mTRANSACTION (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.0ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Node"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-16 06:59:15.720114"], ["updated_at", "2022-09-16 06:59:15.720114"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Create (1.2ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Javascript CSS HTML"], ["place", "Permanent"], ["company_id", 4], ["created_at", "2022-09-16 06:59:15.746612"], ["updated_at", "2022-09-16 06:59:15.746612"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGeek Delete All (47.7ms)[0m  [1m[31mDELETE FROM "geeks"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Mike"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mike"], ["stack", "Sinatra React"], ["resume", "t"], ["created_at", "2022-09-16 06:59:15.971561"], ["updated_at", "2022-09-16 06:59:15.971561"]]
+  [1m[36mTRANSACTION (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.5ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["stack", "Ruby React"], ["resume", "t"], ["created_at", "2022-09-16 06:59:16.021231"], ["updated_at", "2022-09-16 06:59:16.021231"]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Martha"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.3ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Martha"], ["stack", "Rails"], ["resume", "f"], ["created_at", "2022-09-16 06:59:16.065819"], ["updated_at", "2022-09-16 06:59:16.065819"]]
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Juri"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.3ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juri"], ["stack", "Java"], ["resume", "t"], ["created_at", "2022-09-16 06:59:16.110531"], ["updated_at", "2022-09-16 06:59:16.110531"]]
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Andrew"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.3ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Andrew"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-16 06:59:16.154750"], ["updated_at", "2022-09-16 06:59:16.154750"]]
+  [1m[36mTRANSACTION (13.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Nina"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Nina"], ["stack", "Node"], ["resume", "t"], ["created_at", "2022-09-16 06:59:16.199238"], ["updated_at", "2022-09-16 06:59:16.199238"]]
+  [1m[36mTRANSACTION (13.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Bob"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bob"], ["stack", "Front end"], ["resume", "t"], ["created_at", "2022-09-16 06:59:16.244092"], ["updated_at", "2022-09-16 06:59:16.244092"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Kate"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.2ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kate"], ["stack", "PHP"], ["resume", "f"], ["created_at", "2022-09-16 06:59:16.287993"], ["updated_at", "2022-09-16 06:59:16.287993"]]
+  [1m[36mTRANSACTION (12.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "geeks" WHERE "geeks"."name" = $1 LIMIT $2[0m  [["name", "Boris"], ["LIMIT", 1]]
+  [1m[36mGeek Create (1.1ms)[0m  [1m[32mINSERT INTO "geeks" ("name", "stack", "resume", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Boris"], ["stack", "Full stack"], ["resume", "t"], ["created_at", "2022-09-16 06:59:16.327805"], ["updated_at", "2022-09-16 06:59:16.327805"]]
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApply Delete All (57.5ms)[0m  [1m[31mDELETE FROM "applies"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (1.0ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (1.3ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 1], ["read", true], ["invited", true], ["created_at", "2022-09-16 06:59:16.558395"], ["updated_at", "2022-09-16 06:59:16.558395"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (1.1ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApply Create (1.0ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 1], ["geek_id", 2], ["read", false], ["invited", false], ["created_at", "2022-09-16 06:59:16.596977"], ["updated_at", "2022-09-16 06:59:16.596977"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.8ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mJob Load (1.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mApply Create (1.1ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 5], ["geek_id", 5], ["read", true], ["invited", false], ["created_at", "2022-09-16 06:59:16.635198"], ["updated_at", "2022-09-16 06:59:16.635198"]]
+  [1m[36mTRANSACTION (11.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGeek Load (0.6ms)[0m  [1m[34mSELECT "geeks".* FROM "geeks" WHERE "geeks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mApply Create (1.0ms)[0m  [1m[32mINSERT INTO "applies" ("job_id", "geek_id", "read", "invited", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["job_id", 6], ["geek_id", 8], ["read", false], ["invited", false], ["created_at", "2022-09-16 06:59:16.675664"], ["updated_at", "2022-09-16 06:59:16.675664"]]
+  [1m[36mTRANSACTION (16.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-09-23 10:24:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (47.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.4ms | Allocations: 725)
+Completed 200 OK in 275ms (Views: 41.7ms | ActiveRecord: 0.0ms | Allocations: 6350)
+
+
+Started GET "/jobb" for 127.0.0.1 at 2022-09-23 10:24:19 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"jobb"}
+Routing error occurred: jobb
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+Started GET "/v1/companies" for 127.0.0.1 at 2022-09-23 10:24:48 +0300
+  
+Zeitwerk::NameError (expected file /home/jelly/codeProjects/api_rails_pg/app/controllers/api/v1/companies_controller.rb to define constant Api::V1::CompaniesController, but didn't):
+  
+zeitwerk (2.6.0) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:28:in `require'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/company" for 127.0.0.1 at 2022-09-23 10:25:04 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"v1/company"}
+Routing error occurred: v1/company
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started GET "/v1/jobs" for 127.0.0.1 at 2022-09-23 10:26:12 +0300
+  
+NoMethodError (undefined method `v1' for Api:Module):
+  
+app/controllers/api/v1/jobs_controller.rb:1:in `<main>'
+Started GET "/asdljasd" for 127.0.0.1 at 2022-09-23 10:30:41 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"asdljasd"}
+Routing error occurred: asdljasd
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 3ms (Views: 2.1ms | Allocations: 492)
+
+
+Started GET "/asdljasd" for 127.0.0.1 at 2022-09-23 10:32:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"asdljasd"}
+Routing error occurred: asdljasd
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 44ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 14071)
+
+
+Started GET "/v1/jobs" for 127.0.0.1 at 2022-09-23 10:33:06 +0300
+Processing by Api::V1::JobsController#index as HTML
+[active_model_serializers]   [1m[36mJob Load (41.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (344.03ms)
+Completed 200 OK in 600ms (Views: 144.4ms | ActiveRecord: 202.5ms | Allocations: 21575)
+
+
+Started GET "/v1/companies" for 127.0.0.1 at 2022-09-23 10:33:51 +0300
+  
+Zeitwerk::NameError (expected file /home/jelly/codeProjects/api_rails_pg/app/controllers/api/v1/companies_controller.rb to define constant Api::V1::CompaniesController, but didn't):
+  
+zeitwerk (2.6.0) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:28:in `require'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/jobs" for 127.0.0.1 at 2022-09-23 10:33:56 +0300
+Processing by Api::V1::JobsController#index as HTML
+[active_model_serializers]   [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.66ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.9ms | Allocations: 1509)
+
+
+Started GET "/v1/applies" for 127.0.0.1 at 2022-09-23 10:34:38 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"v1/applies"}
+Routing error occurred: v1/applies
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 271)
+
+
+  [1m[36mJob Load (1.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Load (1.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  [1m[36mJob Count (53.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "jobs"[0m
+Started GET "/" for 127.0.0.1 at 2022-11-11 13:10:32 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (47.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 24.1ms | Allocations: 725)
+Completed 200 OK in 178ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 6348)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-11 13:10:39 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 388)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1377)
+
+
+Started GET "/v1/companies" for 127.0.0.1 at 2022-11-11 13:10:53 +0300
+Processing by Api::V1::CompaniesController#index as HTML
+[active_model_serializers]   [1m[36mCompany Load (51.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/companies_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (296.28ms)
+Completed 200 OK in 432ms (Views: 165.4ms | ActiveRecord: 148.6ms | Allocations: 19850)
+
+
+Started GET "/v1/companies/4" for 127.0.0.1 at 2022-11-11 13:11:20 +0300
+Processing by Api::V1::CompaniesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered CompanySerializer with ActiveModelSerializers::Adapter::Attributes (0.93ms)
+Completed 200 OK in 200ms (Views: 136.4ms | ActiveRecord: 1.4ms | Allocations: 6629)
+
+
+Started GET "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:11:24 +0300
+Processing by Api::V1::CompaniesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 839)
+
+
+Started GET "/v1/companies/1" for 127.0.0.1 at 2022-11-11 13:11:26 +0300
+Processing by Api::V1::CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered CompanySerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 756)
+
+
+Started GET "/v1/companies/4/jobs" for 127.0.0.1 at 2022-11-11 13:11:46 +0300
+Processing by Api::V1::JobsController#index as HTML
+  Parameters: {"company_id"=>"4"}
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mJob Load (42.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."company_id" = $1[0m  [["company_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (121.2ms)
+Completed 200 OK in 245ms (Views: 73.7ms | ActiveRecord: 49.9ms | Allocations: 25149)
+
+
+Started GET "/v1/companies/4/jobs/2" for 127.0.0.1 at 2022-11-11 13:11:55 +0300
+Processing by Api::V1::JobsController#show as HTML
+  Parameters: {"company_id"=>"4", "id"=>"2"}
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (0.77ms)
+Completed 200 OK in 78ms (Views: 71.4ms | ActiveRecord: 0.6ms | Allocations: 2689)
+
+
+Started GET "/v1/jobs" for 127.0.0.1 at 2022-11-11 13:12:06 +0300
+Processing by Api::V1::JobsController#index as HTML
+[active_model_serializers]   [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.35ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms | Allocations: 1463)
+
+
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mJob Load (1.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."company_id" = $1[0m  [["company_id", 4]]
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."company_id" = $1 AND "jobs"."id" = $2 LIMIT $3[0m  [["company_id", 4], ["id", 6], ["LIMIT", 1]]
+Started GET "/v1/companies/4" for 127.0.0.1 at 2022-11-11 13:19:25 +0300
+Processing by Api::V1::CompaniesController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered CompanySerializer with ActiveModelSerializers::Adapter::Attributes (10.6ms)
+Completed 200 OK in 377ms (Views: 13.5ms | ActiveRecord: 103.8ms | Allocations: 3834)
+
+
+Started GET "/v1/companies/4/jobs" for 127.0.0.1 at 2022-11-11 13:20:11 +0300
+Processing by Api::V1::JobsController#index as */*
+  Parameters: {"company_id"=>"4"}
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."company_id" = $1[0m  [["company_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.39ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 1.5ms | Allocations: 1740)
+
+
+Started POST "/v1/jobs?name=JS%20Angular&place=Tomsk&company_id=4" for 127.0.0.1 at 2022-11-11 13:22:36 +0300
+Processing by Api::V1::JobsController#create as */*
+  Parameters: {"name"=>"JS Angular", "place"=>"Tomsk", "company_id"=>"4"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mJob Create (268.4ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "JS Angular"], ["place", "Tomsk"], ["company_id", 4], ["created_at", "2022-11-11 10:22:36.629015"], ["updated_at", "2022-11-11 10:22:36.629015"]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (71.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 201 Created in 362ms (Views: 1.7ms | ActiveRecord: 340.8ms | Allocations: 4196)
+
+
+Started POST "/v1/companies?name=Malta&location=Minsk" for 127.0.0.1 at 2022-11-11 13:23:03 +0300
+Processing by Api::V1::CompaniesController#create as */*
+  Parameters: {"name"=>"Malta", "location"=>"Minsk"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:14:in `create'
+  [1m[36mCompany Create (25.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Malta"], ["location", "Minsk"], ["created_at", "2022-11-11 10:23:03.375667"], ["updated_at", "2022-11-11 10:23:03.375667"]]
+  ↳ app/controllers/api/v1/companies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (34.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:14:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 201 Created in 76ms (Views: 1.5ms | ActiveRecord: 59.9ms | Allocations: 2298)
+
+
+Started DELETE "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:23:17 +0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::CompaniesController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/v1/companies/1" for 127.0.0.1 at 2022-11-11 13:25:29 +0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::CompaniesController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:26:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::CompaniesController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:26:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CompaniesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCompany Load (1.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 13.2ms | Allocations: 36743)
+
+
+  
+NoMethodError (undefined method `deleted' for #<Company id: 5, name: "Malta", location: "Minsk", created_at: "2022-11-11 10:23:03.375667000 +0000", updated_at: "2022-11-11 10:23:03.375667000 +0000">
+Did you mean?  delete):
+  
+app/controllers/api/v1/companies_controller.rb:30:in `destroy'
+Started DELETE "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:29:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CompaniesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 11.3ms | Allocations: 36723)
+
+
+  
+NameError (undefined local variable or method `company' for #<Api::V1::CompaniesController:0x0000000000bef0>
+Did you mean?  @company):
+  
+app/controllers/api/v1/companies_controller.rb:30:in `destroy'
+Started DELETE "/v1/companies/5" for 127.0.0.1 at 2022-11-11 13:29:13 +0300
+Processing by Api::V1::CompaniesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 7.3ms | Allocations: 6453)
+
+
+  
+NoMethodError (undefined method `deleted' for #<Company id: 5, name: "Malta", location: "Minsk", created_at: "2022-11-11 10:23:03.375667000 +0000", updated_at: "2022-11-11 10:23:03.375667000 +0000">
+Did you mean?  delete):
+  
+app/controllers/api/v1/companies_controller.rb:30:in `destroy'
