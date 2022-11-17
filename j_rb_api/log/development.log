@@ -1287,3 +1287,316 @@ NoMethodError (undefined method `deleted' for #<Company id: 5, name: "Malta", lo
 Did you mean?  delete):
   
 app/controllers/api/v1/companies_controller.rb:30:in `destroy'
+Started GET "/" for 127.0.0.1 at 2022-11-17 23:56:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (46.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.6ms | Allocations: 727)
+Completed 200 OK in 92ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 6324)
+
+
+Started GET "/api/v1/jobs" for 127.0.0.1 at 2022-11-17 23:57:12 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"api/v1/jobs"}
+Routing error occurred: api/v1/jobs
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.51ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 1073)
+
+
+Started GET "/api/v1/jobs" for 127.0.0.1 at 2022-11-17 23:58:42 +0300
+Processing by ApplicationController#catch_404 as HTML
+  Parameters: {"path"=>"api/v1/jobs"}
+Routing error occurred: api/v1/jobs
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/v1/jobs" for 127.0.0.1 at 2022-11-17 23:58:50 +0300
+Processing by Api::V1::JobsController#index as HTML
+[active_model_serializers]   [1m[36mJob Load (94.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/jobs_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (195.17ms)
+Completed 200 OK in 509ms (Views: 86.7ms | ActiveRecord: 111.0ms | Allocations: 21668)
+
+
+Started GET "/v1/jobs/3" for 127.0.0.1 at 2022-11-18 00:00:03 +0300
+Processing by Api::V1::JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.69ms)
+Completed 200 OK in 222ms (Views: 168.2ms | ActiveRecord: 0.8ms | Allocations: 5754)
+
+
+Started GET "/v1/jobs/3?name=Re" for 127.0.0.1 at 2022-11-18 00:00:22 +0300
+Processing by Api::V1::JobsController#show as HTML
+  Parameters: {"name"=>"Re", "id"=>"3"}
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.13ms)
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.8ms | Allocations: 850)
+
+
+Started GET "/v1/jobs/3?name=Re&place=R" for 127.0.0.1 at 2022-11-18 00:00:34 +0300
+Processing by Api::V1::JobsController#show as HTML
+  Parameters: {"name"=>"Re", "place"=>"R", "id"=>"3"}
+  [1m[36mJob Load (1.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.61ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.5ms | Allocations: 742)
+
+
+  [1m[36mJob Load (1.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  [1m[36mCompany Load (2.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (Tomsk)[0m
+  [1m[36mCompany Load (34.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (Tomsk)[0m
+  [1m[36mCompany Load (22.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mCompany Load (1.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/v1/companies/4" for ::1 at 2022-11-18 00:08:59 +0300
+Processing by Api::V1::CompaniesController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered CompanySerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 200 OK in 106ms (Views: 17.8ms | ActiveRecord: 26.9ms | Allocations: 19619)
+
+
+Started POST "/v1/jobs?name=.NET&place=Minsk" for ::1 at 2022-11-18 00:09:42 +0300
+Processing by Api::V1::JobsController#create as */*
+  Parameters: {"name"=>".NET", "place"=>"Minsk"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (108.16ms)
+Completed 200 OK in 186ms (Views: 110.0ms | ActiveRecord: 0.0ms | Allocations: 6755)
+
+
+Started POST "/v1/jobs?name=JS%20Angular&place=Tomsk&company_id=4" for ::1 at 2022-11-18 00:10:03 +0300
+Processing by Api::V1::JobsController#create as */*
+  Parameters: {"name"=>"JS Angular", "place"=>"Tomsk", "company_id"=>"4"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mJob Create (33.8ms)[0m  [1m[32mINSERT INTO "jobs" ("name", "place", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "JS Angular"], ["place", "Tomsk"], ["company_id", 4], ["created_at", "2022-11-17 21:10:03.191401"], ["updated_at", "2022-11-17 21:10:03.191401"]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:19:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 201 Created in 102ms (Views: 1.0ms | ActiveRecord: 49.5ms | Allocations: 5038)
+
+
+Started PUT "/v1/jobs?name=Putter&Place=WEB_SPbSTU" for ::1 at 2022-11-18 00:11:22 +0300
+Processing by ApplicationController#catch_404 as */*
+  Parameters: {"name"=>"Putter", "Place"=>"WEB_SPbSTU", "path"=>"v1/jobs"}
+Routing error occurred: v1/jobs
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 272)
+
+
+Started PUT "/v1/jobs/5?name=Putter&Place=WEB_SPbSTU" for ::1 at 2022-11-18 00:11:38 +0300
+Processing by Api::V1::JobsController#update as */*
+  Parameters: {"name"=>"Putter", "Place"=>"WEB_SPbSTU", "id"=>"5"}
+  [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[31mUnpermitted parameters: :Place, :id. Context: { controller: Api::V1::JobsController, action: update, request: #<ActionDispatch::Request:0x00007f8290763c10>, params: {"name"=>"Putter", "Place"=>"WEB_SPbSTU", "controller"=>"api/v1/jobs", "action"=>"update", "id"=>"5"} }[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mJob Update (1.3ms)[0m  [1m[33mUPDATE "jobs" SET "name" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["name", "Putter"], ["updated_at", "2022-11-17 21:11:38.070172"], ["id", 5]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (22.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.21ms)
+Completed 200 OK in 57ms (Views: 2.4ms | ActiveRecord: 26.2ms | Allocations: 3882)
+
+
+Started PUT "/v1/jobs/4?name=Putter&Place=WEB_SPbSTU" for ::1 at 2022-11-18 00:12:01 +0300
+Processing by Api::V1::JobsController#update as */*
+  Parameters: {"name"=>"Putter", "Place"=>"WEB_SPbSTU", "id"=>"4"}
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[31mUnpermitted parameters: :Place, :id. Context: { controller: Api::V1::JobsController, action: update, request: #<ActionDispatch::Request:0x000055ed0d02c9e8>, params: {"name"=>"Putter", "Place"=>"WEB_SPbSTU", "controller"=>"api/v1/jobs", "action"=>"update", "id"=>"4"} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mJob Update (0.7ms)[0m  [1m[33mUPDATE "jobs" SET "name" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["name", "Putter"], ["updated_at", "2022-11-17 21:12:01.952683"], ["id", 4]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (0.83ms)
+Completed 200 OK in 62ms (Views: 2.0ms | ActiveRecord: 42.6ms | Allocations: 3640)
+
+
+Started PUT "/v1/jobs/4?name=Putter&place=WEB_SPbSTU" for ::1 at 2022-11-18 00:12:14 +0300
+Processing by Api::V1::JobsController#update as */*
+  Parameters: {"name"=>"Putter", "place"=>"WEB_SPbSTU", "id"=>"4"}
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[31mUnpermitted parameter: :id. Context: { controller: Api::V1::JobsController, action: update, request: #<ActionDispatch::Request:0x00007f8290833cf8>, params: {"name"=>"Putter", "place"=>"WEB_SPbSTU", "controller"=>"api/v1/jobs", "action"=>"update", "id"=>"4"} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mJob Update (0.8ms)[0m  [1m[33mUPDATE "jobs" SET "place" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["place", "WEB_SPbSTU"], ["updated_at", "2022-11-17 21:12:14.027275"], ["id", 4]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (35.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.2ms)
+Completed 200 OK in 57ms (Views: 3.0ms | ActiveRecord: 37.8ms | Allocations: 3642)
+
+
+Started PUT "/v1/jobs/3?name=Putter&place=WEB_SPbSTU" for ::1 at 2022-11-18 00:12:19 +0300
+Processing by Api::V1::JobsController#update as */*
+  Parameters: {"name"=>"Putter", "place"=>"WEB_SPbSTU", "id"=>"3"}
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[31mUnpermitted parameter: :id. Context: { controller: Api::V1::JobsController, action: update, request: #<ActionDispatch::Request:0x000055ed0d196428>, params: {"name"=>"Putter", "place"=>"WEB_SPbSTU", "controller"=>"api/v1/jobs", "action"=>"update", "id"=>"3"} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mJob Update (0.9ms)[0m  [1m[33mUPDATE "jobs" SET "name" = $1, "place" = $2, "updated_at" = $3 WHERE "jobs"."id" = $4[0m  [["name", "Putter"], ["place", "WEB_SPbSTU"], ["updated_at", "2022-11-17 21:12:19.504883"], ["id", 3]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (24.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/jobs_controller.rb:27:in `update'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 52ms (Views: 2.3ms | ActiveRecord: 27.2ms | Allocations: 3639)
+
+
+Started GET "/v1/companies/3" for ::1 at 2022-11-18 00:12:38 +0300
+Processing by Api::V1::CompaniesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:50:in `set_company'
+[active_model_serializers] Rendered CompanySerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 724)
+
+
+Started GET "/v1/jobs/3" for ::1 at 2022-11-18 00:12:46 +0300
+Processing by Api::V1::JobsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (0.88ms)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 730)
+
+
+Started GET "/v1/jobs/2" for ::1 at 2022-11-18 00:12:49 +0300
+Processing by Api::V1::JobsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/jobs_controller.rb:55:in `set_job'
+[active_model_serializers] Rendered JobSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 730)
+
+
+Started DELETE "/v1/jobs/3" for ::1 at 2022-11-18 00:13:43 +0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::JobsController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/lint.rb:50:in `_call'
+rack (2.2.4) lib/rack/lint.rb:38:in `call'
+rack (2.2.4) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.2.4) lib/rack/common_logger.rb:38:in `call'
+sinatra (2.2.2) lib/sinatra/base.rb:255:in `call'
+rack (2.2.4) lib/rack/content_length.rb:17:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/v1/jobs/2" for ::1 at 2022-11-18 00:14:06 +0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::JobsController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/lint.rb:50:in `_call'
+rack (2.2.4) lib/rack/lint.rb:38:in `call'
+rack (2.2.4) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.2.4) lib/rack/common_logger.rb:38:in `call'
+sinatra (2.2.2) lib/sinatra/base.rb:255:in `call'
+rack (2.2.4) lib/rack/content_length.rb:17:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'

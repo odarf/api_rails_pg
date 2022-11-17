@@ -1,3 +1,3 @@
 class Apartment < ApplicationRecord
-  belongs_to :resorts
+  belongs_to :resort
 end
