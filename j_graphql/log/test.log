@@ -1,0 +1,139 @@
+  [1m[35m (335.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "graphql_test"[0m
+  [1m[35m (953.2ms)[0m  [1m[35mCREATE DATABASE "graphql_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "apartments" CASCADE[0m
+  [1m[35m (197.7ms)[0m  [1m[35mCREATE TABLE "apartments" ("id" bigserial primary key, "room_type" character varying, "description" character varying, "resort_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "resorts" CASCADE[0m
+  [1m[35m (153.3ms)[0m  [1m[35mCREATE TABLE "resorts" ("id" bigserial primary key, "name" character varying, "email" character varying, "description" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (151.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (10.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221117185910)[0m
+  [1m[35m (10.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221117185816);
+
+[0m
+  [1m[35m (140.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-11-17 20:24:46.156793"], ["updated_at", "2022-11-17 20:24:46.156793"]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "994cefeab6069a96f18eab90cc1ba70c0041a742"], ["created_at", "2022-11-17 20:24:46.184708"], ["updated_at", "2022-11-17 20:24:46.184708"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "apartments" DISABLE TRIGGER ALL;ALTER TABLE "resorts" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[31mDELETE FROM "apartments";
+DELETE FROM "resorts";
+INSERT INTO "apartments" ("id", "room_type", "description", "resort_id", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', 1, '2022-11-17 20:24:46.597540', '2022-11-17 20:24:46.597540'), (298486374, 'MyString', 'MyString', 1, '2022-11-17 20:24:46.597540', '2022-11-17 20:24:46.597540');
+INSERT INTO "resorts" ("id", "name", "email", "description", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', 'MyString', '2022-11-17 20:24:46.615409', '2022-11-17 20:24:46.615409'), (298486374, 'MyString', 'MyString', 'MyString', '2022-11-17 20:24:46.615409', '2022-11-17 20:24:46.615409')[0m
+  [1m[36mTRANSACTION (22.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "apartments" ENABLE TRIGGER ALL;ALTER TABLE "resorts" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.3ms)[0m  [1m[35mdo $$
+  declare r record;
+BEGIN
+FOR r IN (
+  SELECT FORMAT(
+    'UPDATE pg_constraint SET convalidated=false WHERE conname = ''%I'' AND connamespace::regnamespace = ''%I''::regnamespace; ALTER TABLE %I.%I VALIDATE CONSTRAINT %I;',
+    constraint_name,
+    table_schema,
+    table_schema,
+    table_name,
+    constraint_name
+  ) AS constraint_check
+  FROM information_schema.table_constraints WHERE constraint_type = 'FOREIGN KEY'
+)
+  LOOP
+    EXECUTE (r.constraint_check);
+  END LOOP;
+END;
+$$;
+[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ResortsControllerTest: test_should_create_resort
+------------------------------------------------
+  [1m[36mResort Load (0.6ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mResort Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "resorts"[0m
+ResortsControllerTest - test_should_create_resort: NameError raised.
+If you expected this exception, use `assert_raises` as near to the code that raises as possible.
+Other block based assertions (e.g. `assert_difference`) can be used, as long as `assert_raises` is inside their block.
+
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ResortsControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[36mResort Load (0.7ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------------
+ResortsControllerTest: test_should_destroy_resort
+-------------------------------------------------
+  [1m[36mResort Load (0.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mResort Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "resorts"[0m
+ResortsControllerTest - test_should_destroy_resort: NoMethodError raised.
+If you expected this exception, use `assert_raises` as near to the code that raises as possible.
+Other block based assertions (e.g. `assert_difference`) can be used, as long as `assert_raises` is inside their block.
+
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+ResortsControllerTest: test_should_show_resort
+----------------------------------------------
+  [1m[36mResort Load (0.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ResortsControllerTest: test_should_update_resort
+------------------------------------------------
+  [1m[36mResort Load (0.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------
+ApartmentsControllerTest: test_should_create_apartment
+------------------------------------------------------
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mApartment Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "apartments"[0m
+ApartmentsControllerTest - test_should_create_apartment: NameError raised.
+If you expected this exception, use `assert_raises` as near to the code that raises as possible.
+Other block based assertions (e.g. `assert_difference`) can be used, as long as `assert_raises` is inside their block.
+
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+ApartmentsControllerTest: test_should_get_index
+-----------------------------------------------
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------------------
+ApartmentsControllerTest: test_should_destroy_apartment
+-------------------------------------------------------
+  [1m[36mApartment Load (0.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mApartment Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "apartments"[0m
+ApartmentsControllerTest - test_should_destroy_apartment: NoMethodError raised.
+If you expected this exception, use `assert_raises` as near to the code that raises as possible.
+Other block based assertions (e.g. `assert_difference`) can be used, as long as `assert_raises` is inside their block.
+
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------------
+ApartmentsControllerTest: test_should_show_apartment
+----------------------------------------------------
+  [1m[36mApartment Load (0.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------
+ApartmentsControllerTest: test_should_update_apartment
+------------------------------------------------------
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m

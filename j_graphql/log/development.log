@@ -1,0 +1,549 @@
+  [1m[35m (156.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (111.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3243419815343292060)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateApartments (20221117185816)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (156.8ms)[0m  [1m[35mCREATE TABLE "apartments" ("id" bigserial primary key, "room_type" character varying, "description" character varying, "resort_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221117185816"]]
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateResorts (20221117185910)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (113.7ms)[0m  [1m[35mCREATE TABLE "resorts" ("id" bigserial primary key, "name" character varying, "email" character varying, "description" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221117185910"]]
+  [1m[36mTRANSACTION (24.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-17 19:09:56.664110"], ["updated_at", "2022-11-17 19:09:56.664110"]]
+  [1m[36mTRANSACTION (16.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(3243419815343292060)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-11-17 22:22:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.4ms | Allocations: 832)
+Completed 200 OK in 119ms (Views: 45.2ms | ActiveRecord: 0.0ms | Allocations: 7599)
+
+
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 22:22:50 +0300
+Processing by GraphqlController#execute as HTML
+  Parameters: {"query"=>"{testField:testField}"}
+uninitialized constant GraphqlController::FifthSchema
+/home/jelly/codeProjects/api_rails_pg/j_graphql/app/controllers/graphql_controller.rb:15:in `execute'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/abstract_controller/base.rb:215:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/rendering.rb:53:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/abstract_controller/callbacks.rb:233:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/notifications.rb:206:in `block in instrument'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/notifications.rb:206:in `instrument'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/activerecord-7.0.4/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/abstract_controller/base.rb:151:in `process'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal.rb:188:in `dispatch'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_controller/metal.rb:251:in `dispatch'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/journey/router.rb:32:in `each'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/journey/router.rb:32:in `serve'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/routing/route_set.rb:852:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/etag.rb:27:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/conditional_get.rb:27:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/activerecord-7.0.4/lib/active_record/migration.rb:603:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/callbacks.rb:99:in `run_callbacks'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+/usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+/usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/lint.rb:50:in `_call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/lint.rb:38:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/show_exceptions.rb:23:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/common_logger.rb:38:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/rack-2.2.4/lib/rack/content_length.rb:17:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+/usr/lib/ruby/gems/3.0.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Completed 500 Internal Server Error in 13ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2542)
+
+
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 22:23:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-17 22:23:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/graphql?query={resort:resort(id:2){name,email,description}}" for 127.0.0.1 at 2022-11-17 22:26:32 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Create (2.6ms)[0m  [1m[32mINSERT INTO "resorts" ("name", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kilo"], ["email", "kilo@mail.com"], ["description", nil], ["created_at", "2022-11-17 19:29:17.072910"], ["updated_at", "2022-11-17 19:29:17.072910"]]
+  [1m[36mTRANSACTION (26.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Create (1.2ms)[0m  [1m[32mINSERT INTO "resorts" ("name", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mega"], ["email", "mega@mail.com"], ["description", nil], ["created_at", "2022-11-17 19:29:17.124450"], ["updated_at", "2022-11-17 19:29:17.124450"]]
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (0.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApartment Create (1.6ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "a"], ["description", ""], ["resort_id", 1], ["created_at", "2022-11-17 19:29:17.409058"], ["updated_at", "2022-11-17 19:29:17.409058"]]
+  [1m[36mTRANSACTION (10.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (0.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApartment Create (1.4ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "b"], ["description", ""], ["resort_id", 1], ["created_at", "2022-11-17 19:29:17.448136"], ["updated_at", "2022-11-17 19:29:17.448136"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (1.0ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApartment Create (1.1ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "c"], ["description", ""], ["resort_id", 1], ["created_at", "2022-11-17 19:29:17.484512"], ["updated_at", "2022-11-17 19:29:17.484512"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (0.7ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mApartment Create (0.9ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "a"], ["description", ""], ["resort_id", 2], ["created_at", "2022-11-17 19:29:17.510718"], ["updated_at", "2022-11-17 19:29:17.510718"]]
+  [1m[36mTRANSACTION (57.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (0.9ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mApartment Create (1.2ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "b"], ["description", ""], ["resort_id", 2], ["created_at", "2022-11-17 19:29:17.593827"], ["updated_at", "2022-11-17 19:29:17.593827"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResort Load (0.9ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mApartment Create (0.8ms)[0m  [1m[32mINSERT INTO "apartments" ("room_type", "description", "resort_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["room_type", "c"], ["description", ""], ["resort_id", 2], ["created_at", "2022-11-17 19:29:17.628904"], ["updated_at", "2022-11-17 19:29:17.628904"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/graphql?query={resort:resort(id:2){name,email,description}}" for 127.0.0.1 at 2022-11-17 22:30:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+Started GET "/graphql?query={resort(id:2){name,email,description}}" for 127.0.0.1 at 2022-11-17 22:31:34 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+Started GET "/graphql?query={resort(id:2){name,email,description}}" for 127.0.0.1 at 2022-11-17 22:35:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+Started GET "/graphql" for 127.0.0.1 at 2022-11-17 22:39:33 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:5:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-11-17 22:39:38 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 394)
+Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/graphql" for 127.0.0.1 at 2022-11-17 22:43:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/resorts" for 127.0.0.1 at 2022-11-17 22:44:43 +0300
+Processing by ResortsController#index as HTML
+  [1m[36mResort Load (0.9ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts"[0m
+  ↳ app/controllers/resorts_controller.rb:4:in `index'
+Completed 200 OK in 63ms (Views: 40.4ms | ActiveRecord: 12.5ms | Allocations: 19414)
+
+
+Started GET "/resorts/1" for 127.0.0.1 at 2022-11-17 22:44:56 +0300
+Processing by ResortsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mResort Load (0.7ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/resorts_controller.rb:9:in `show'
+Completed 200 OK in 15ms (Views: 1.4ms | ActiveRecord: 1.3ms | Allocations: 1902)
+
+
+Started GET "/resorts/1" for 127.0.0.1 at 2022-11-17 22:51:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResortsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mResort Load (1.2ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" WHERE "resorts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/resorts_controller.rb:9:in `show'
+Completed 200 OK in 97ms (Views: 2.3ms | ActiveRecord: 12.5ms | Allocations: 33176)
+
+
+Started GET "/graphql" for 127.0.0.1 at 2022-11-17 22:52:00 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?=" for 127.0.0.1 at 2022-11-17 22:52:06 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?={testField:testField}" for 127.0.0.1 at 2022-11-17 22:54:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 22:55:21 +0300
+  
+GraphQL::Error (Second definition of `mutation(...)` (Types::MutationType) is invalid, already configured with Types::MutationType):
+  
+app/graphql/j_graphql_schema.rb:3:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 22:56:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 22:57:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={allApartments:testField}" for 127.0.0.1 at 2022-11-17 23:00:36 +0300
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={allApartments}" for 127.0.0.1 at 2022-11-17 23:00:42 +0300
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={all_partments:1}" for 127.0.0.1 at 2022-11-17 23:01:12 +0300
+  
+ArgumentError (wrong number of arguments (given 1, expected 3)):
+  
+app/graphql/types/query_type.rb:37:in `block in <class:QueryType>'
+app/graphql/types/query_type.rb:35:in `<class:QueryType>'
+app/graphql/types/query_type.rb:3:in `<module:Types>'
+app/graphql/types/query_type.rb:1:in `<main>'
+app/graphql/j_graphql_schema.rb:4:in `<class:JGraphqlSchema>'
+app/graphql/j_graphql_schema.rb:1:in `<main>'
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={all_partments:1}" for 127.0.0.1 at 2022-11-17 23:01:31 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={all_apartments:1}" for 127.0.0.1 at 2022-11-17 23:01:41 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphql?query={all_apartments}" for 127.0.0.1 at 2022-11-17 23:01:48 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:07:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/graphiql"):
+  
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:08:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 93.8ms | Allocations: 10509)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms | Allocations: 16911)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:14:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 24.2ms | Allocations: 5117)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms | Allocations: 11145)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/graphql" for 127.0.0.1 at 2022-11-17 23:26:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-11-17 23:26:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:26:23 +0300
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 21.0ms | Allocations: 4830)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms | Allocations: 8551)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:29:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 163.5ms | Allocations: 16384)
+Completed 200 OK in 180ms (Views: 168.5ms | ActiveRecord: 0.0ms | Allocations: 22194)
+
+
+Started GET "/assets/graphiql/rails/application-d78230954080343c556e7465ad58ff8802dc2c2455d2e14983801a14c3dd0036.js" for 127.0.0.1 at 2022-11-17 23:29:48 +0300
+Started GET "/assets/graphiql/rails/application-5bb68625e0c7ddf3eece980e20001faed96197d338dca5fa33e0f5da8a060deb.css" for 127.0.0.1 at 2022-11-17 23:29:48 +0300
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:29:49 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:29:49 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:31:48 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:32:30 +0300
+  
+TypeError (superclass mismatch for class JGraphqlSchema):
+  
+app/controllers/graphql_controller.rb:1:in `<main>'
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:34:41 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mResort Load (1.3ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" ORDER BY "resorts"."id" ASC LIMIT $1[0m  [["LIMIT", 15]]
+undefined method `apartment' for #<Resort id: 1, name: "Kilo", email: "kilo@mail.com", description: nil, created_at: "2022-11-17 19:29:17.072910000 +0000", updated_at: "2022-11-17 19:29:17.072910000 +0000">
+Did you mean?  apartments
+               apartments=
+/usr/lib/ruby/gems/3.0.0/gems/activemodel-7.0.4/lib/active_model/attribute_methods.rb:458:in `method_missing'
+/home/jelly/codeProjects/api_rails_pg/j_graphql/app/graphql/types/resort_type.rb:14:in `apartments'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:686:in `public_send'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:686:in `block (2 levels) in resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:818:in `block in with_extensions'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:854:in `block (2 levels) in run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:857:in `run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:854:in `block in run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field_extension.rb:137:in `resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:841:in `run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:813:in `with_extensions'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:657:in `block in resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema.rb:1043:in `after_lazy'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:655:in `resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:511:in `block (3 levels) in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/tracing.rb:65:in `trace'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:510:in `block (2 levels) in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:842:in `call_method_on_directives'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:507:in `block in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:942:in `after_lazy'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:445:in `evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:438:in `block in evaluate_selection'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/member/has_arguments.rb:246:in `block (3 levels) in coerce_arguments'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/dataloader.rb:181:in `block in run'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/dataloader.rb:306:in `block in spawn_fiber'
+Completed 500 Internal Server Error in 166ms (Views: 1.4ms | ActiveRecord: 12.4ms | Allocations: 43315)
+
+
+Started GET "/graphql" for 127.0.0.1 at 2022-11-17 23:34:55 +0300
+Processing by GraphqlController#execute as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/graphql?query={testField:testField}" for 127.0.0.1 at 2022-11-17 23:35:09 +0300
+Processing by GraphqlController#execute as HTML
+  Parameters: {"query"=>"{testField:testField}"}
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1278)
+
+
+Started GET "/graphiql" for 127.0.0.1 at 2022-11-17 23:35:20 +0300
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /usr/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.8.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 153.3ms | Allocations: 13576)
+Completed 200 OK in 180ms (Views: 160.9ms | ActiveRecord: 0.0ms | Allocations: 19333)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:35:21 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+Completed 200 OK in 157ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 22699)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:35:28 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mResort Load (1.5ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" ORDER BY "resorts"."id" ASC LIMIT $1[0m  [["LIMIT", 15]]
+undefined method `apartment' for #<Resort id: 1, name: "Kilo", email: "kilo@mail.com", description: nil, created_at: "2022-11-17 19:29:17.072910000 +0000", updated_at: "2022-11-17 19:29:17.072910000 +0000">
+Did you mean?  apartments
+               apartments=
+/usr/lib/ruby/gems/3.0.0/gems/activemodel-7.0.4/lib/active_model/attribute_methods.rb:458:in `method_missing'
+/home/jelly/codeProjects/api_rails_pg/j_graphql/app/graphql/types/resort_type.rb:14:in `apartments'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:686:in `public_send'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:686:in `block (2 levels) in resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:818:in `block in with_extensions'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:854:in `block (2 levels) in run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:857:in `run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:854:in `block in run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field_extension.rb:137:in `resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:841:in `run_extensions_before_resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:813:in `with_extensions'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:657:in `block in resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema.rb:1043:in `after_lazy'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/field.rb:655:in `resolve'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:511:in `block (3 levels) in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/tracing.rb:65:in `trace'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:510:in `block (2 levels) in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:842:in `call_method_on_directives'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:507:in `block in evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:942:in `after_lazy'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:445:in `evaluate_selection_with_args'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/execution/interpreter/runtime.rb:438:in `block in evaluate_selection'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/schema/member/has_arguments.rb:246:in `block (3 levels) in coerce_arguments'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/dataloader.rb:181:in `block in run'
+/usr/lib/ruby/gems/3.0.0/gems/graphql-2.0.15/lib/graphql/dataloader.rb:306:in `block in spawn_fiber'
+Completed 500 Internal Server Error in 35ms (Views: 1.3ms | ActiveRecord: 1.5ms | Allocations: 4016)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:36:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id\n    }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mResort Load (1.8ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" ORDER BY "resorts"."id" ASC LIMIT $1[0m  [["LIMIT", 15]]
+  [1m[36mApartment Load (1.0ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."resort_id" = $1 ORDER BY "apartments"."id" ASC LIMIT $2[0m  [["resort_id", 1], ["LIMIT", 15]]
+  [1m[36mApartment Load (0.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."resort_id" = $1 ORDER BY "apartments"."id" ASC LIMIT $2[0m  [["resort_id", 2], ["LIMIT", 15]]
+Completed 200 OK in 287ms (Views: 3.1ms | ActiveRecord: 23.5ms | Allocations: 64612)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:37:12 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id, roomType\n    }\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\n{\n  allResorts{\n    id, name, email, apartments{\n      id, roomType\n    }\n  }\n}\n", "variables"=>nil}}
+  [1m[36mResort Load (0.7ms)[0m  [1m[34mSELECT "resorts".* FROM "resorts" ORDER BY "resorts"."id" ASC LIMIT $1[0m  [["LIMIT", 15]]
+  [1m[36mApartment Load (3.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."resort_id" = $1 ORDER BY "apartments"."id" ASC LIMIT $2[0m  [["resort_id", 1], ["LIMIT", 15]]
+  [1m[36mApartment Load (0.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."resort_id" = $1 ORDER BY "apartments"."id" ASC LIMIT $2[0m  [["resort_id", 2], ["LIMIT", 15]]
+Completed 200 OK in 36ms (Views: 1.1ms | ActiveRecord: 5.5ms | Allocations: 3469)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:38:18 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil}}
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 705)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:38:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil}}
+Completed 200 OK in 89ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 22234)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:42:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+  [1m[36mResort Create (6.0ms)[0m  [1m[32mINSERT INTO "resorts" ("name", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TestDummy"], ["email", "test@mail.com"], ["description", "test"], ["created_at", "2022-11-17 20:42:04.867694"], ["updated_at", "2022-11-17 20:42:04.867694"]]
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+  [1m[36mTRANSACTION (19.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+Completed 200 OK in 249ms (Views: 0.7ms | ActiveRecord: 38.2ms | Allocations: 42950)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:42:18 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  create_resort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  create_resort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil}}
+Completed 200 OK in 14ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1519)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2022-11-17 23:42:26 +0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil, "graphql"=>{"query"=>"# Welcome to GraphiQL\n#\n# GraphiQL is an in-browser tool for writing, validating, and\n# testing GraphQL queries.\n#\n# Type queries into this side of the screen, and you will see intelligent\n# typeaheads aware of the current GraphQL type schema and live syntax and\n# validation errors highlighted within the text.\n#\n# GraphQL queries typically start with a \"{\" character. Lines that start\n# with a # are ignored.\n#\n# An example GraphQL query might look like:\n#\n#     {\n#       field(arg: \"value\") {\n#         subField\n#       }\n#     }\n#\n# Keyboard shortcuts:\n#\n#  Prettify Query:  Shift-Ctrl-P (or press the prettify button above)\n#\n#     Merge Query:  Shift-Ctrl-M (or press the merge button above)\n#\n#       Run Query:  Ctrl-Enter (or press the play button above)\n#\n#   Auto Complete:  Ctrl-Space (or just start typing)\n#\nmutation{\n  createResort(name: \"TestDummy\", email: \"test@mail.com\", description: \"test\"){\n    id\n    name\n    email\n    description\n  }\n}\n", "variables"=>nil}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+  [1m[36mResort Create (1.8ms)[0m  [1m[32mINSERT INTO "resorts" ("name", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TestDummy"], ["email", "test@mail.com"], ["description", "test"], ["created_at", "2022-11-17 20:42:26.999077"], ["updated_at", "2022-11-17 20:42:26.999077"]]
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+  [1m[36mTRANSACTION (36.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/graphql/types/mutation_type.rb:15:in `create_resort'
+Completed 200 OK in 63ms (Views: 0.7ms | ActiveRecord: 39.1ms | Allocations: 2983)
+
+
